@@ -58,7 +58,7 @@ function onImageClick(evt) {
   refs.backdrop.classList.add("is-open");
 
   // устанавливаем новый src элемента img.lightbox__image
-  changeModalImgSourse(target);
+  changeModalImgSourсe(target);
 
   // вешаем слушатели клавиатуры
   addKeyListeners();
@@ -67,7 +67,7 @@ function onImageClick(evt) {
   parentItem.classList.add("lightbox__image");
 }
 
-function changeModalImgSourse(elem) {
+function changeModalImgSourсe(elem) {
   refs.imgInModal.src = elem.dataset.source;
 }
 
@@ -152,7 +152,7 @@ function onLeftArrowPress(event) {
 function changeImage(currentActiveItem, nextActiveItem) {
   const nextImg = nextActiveItem.querySelector(".gallery__image");
 
-  changeModalImgSourse(nextImg);
+  changeModalImgSourсe(nextImg);
 
   currentActiveItem.classList.remove("lightbox__image");
   nextActiveItem.classList.add("lightbox__image");
